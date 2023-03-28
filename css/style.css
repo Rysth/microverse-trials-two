@@ -1,0 +1,142 @@
+:root {
+	--clr-dark-blue: #07131e;
+	--clr-blue-light: #9bd9ee;
+	--clr-grey: #576e86;
+	--clr-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Friz Quadrata Std", sans-serif;
+}
+
+body {
+	height: 100%;
+	margin: 5rem 0.5rem;
+	background-color: var(--clr-dark-blue);
+	line-height: 1.5;
+}
+
+#main {
+	background-color: var(--clr-white);
+	border-radius: 0.5rem;
+	padding: 5rem 0rem;
+	margin-bottom: 5rem;
+}
+
+.color-primary {
+	color: var(--clr-dark-blue);
+}
+
+.text-center {
+	text-align: center;
+	margin: 0rem 0;
+}
+
+#title {
+	font-size: min(5rem, 11vw);
+	letter-spacing: -0.3rem;
+	font-weight: 400;
+	font-family: "warcraft", sans-serif;
+}
+
+#subtitle {
+	margin-top: -0.8rem;
+	font-size: min(2rem, 5vw);
+	margin-bottom: 3rem;
+}
+
+#main > #img-div {
+	background-color: var(--clr-dark-blue);
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+#main > #img-div > #image {
+	display: block;
+	width: 90%;
+	max-width: 100%;
+	height: auto;
+	margin-inline: auto;
+	object-fit: cover;
+}
+
+#main > #img-div > #img-caption {
+	color: var(--clr-white);
+	margin-top: 1rem;
+	text-align: center;
+	margin-inline: auto;
+	max-width: 90%;
+}
+
+#main > #tribute-info {
+	width: min(100%, 35rem);
+	margin: 0 auto;
+}
+
+#main > #tribute-info > h2 {
+	margin-top: 3.3rem;
+}
+
+#main > #tribute-info > ul {
+	text-align: justify;
+	margin-inline: auto;
+	padding-left: 0;
+}
+
+#main > #tribute-info > ul > li {
+	margin: 2rem 0;
+}
+
+#main > blockquote {
+	font-size: 1.1rem;
+	margin: 3rem auto;
+	text-align: justify;
+	max-width: 50%;
+	color: var(--clr-grey);
+}
+
+#main > p {
+	text-align: center;
+	margin-inline: auto;
+	max-width: 80%;
+	font-size: min(2rem, 5vw);
+	margin-bottom: 0;
+}
+
+#main > p > a {
+	color: var(--clr-blue-light);
+	text-decoration: none;
+	text-shadow: 1px 1px 2px var(--clr-dark-blue);
+	transition: 0.05s;
+}
+
+#main > p > a:hover {
+	color: var(--clr-dark-blue);
+	text-shadow: 1px 1px 2px var(--clr-blue-light);
+}
+
+#main > p > a:active {
+	color: var(--clr-dark-blue);
+}
+
+.fs-3 {
+	font-size: 2rem !important;
+}
+
+@media (max-width: 700px) {
+	#main > #img-div #image {
+		width: 100%;
+	}
+
+	#main > blockquote {
+		min-width: 80%;
+	}
+}
